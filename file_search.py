@@ -1,4 +1,9 @@
-import os, time
+import os , time , sqlite3
+connection = sqlite3.connect("./db.sqlite3")
+crsr = connection.cursor()
+
+crsr.execute("Create table History if no exists ( path TEXT )")
+crsr.execute("create table History ( path TEXT )")
 
 start_path = "/home/user-name/"  # input your preset path examples:
 
