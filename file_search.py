@@ -1,4 +1,4 @@
-import os, time, sqlite3
+import os, time
 
 # os , time should be pre installed
 
@@ -39,8 +39,7 @@ def search_file(search, path):
                 print("it took ", clock, "s")
                 print("tries: ", n)
                 if input("do you want to continue searching? [Y/N]").lower() == "y":
-                    liste.insert(0, "path: " + root + "\n" + "it took " + str(clock) + "s" + "\n" + "tryes: " + str(
-                        n) + "\n")
+                    liste.insert(0, "path: " + root + "\n" + "it took " + str(clock) + "s" + "\n" + "tryes: " + str(n) + "\n")
                 else:
                     print("\n", "-" * 35)
                     for listen in liste:
@@ -85,8 +84,7 @@ def search_folder(search, path):
                 print("it took ", clock, "s")
                 print("tries: ", n)
                 if input("do you want to continue searching? [Y/N]").lower() == "y":
-                    liste.insert(0, "path: " + root + "\n" + "it took " + str(clock) + "s" + "\n" + "tryes: " + str(
-                        n) + "\n")
+                    liste.insert(0, "path: " + root + "\n" + "it took " + str(clock) + "s" + "\n" + "tryes: " + str(n) + "\n")
                 else:
                     print("\n", "-" * 35)
                     for listen in liste:
